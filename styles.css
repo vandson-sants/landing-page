@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*cores*/
+
+:root {
+  --green: #080;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+}
+
+.navigation-bar {
+  width: 80%;
+}
+
+.list-item-navbar {
+  list-style: none;
+  display: flex;
+  justify-content: s;
+}
+
+.navbar-item {
+  margin: 2px;
+}
+
+.container-main {
+  height: 100vh;
+  background-image: radial-gradient(
+    ellipse at center,
+    #84b688 0%,
+    #2aa158 100%
+  );
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+
+.content-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-photo {
+  width: 300px;
+  height: 350px;
+  padding: 1rem;
+}
