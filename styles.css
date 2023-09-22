@@ -6,26 +6,34 @@
   box-sizing: border-box;
 }
 
-/*cores*/
-
 :root {
-  --background: #080;
+  --color-text: #04520e;
+  --color-text-2: #2b2b2b;
+  --color-btn: #7ec181;
+  --font-family: "IBM Plex Sans", sans-serif;
 }
 
 header {
   display: flex;
   justify-content: space-evenly;
-  height: 100px;
+  height: 150px;
+}
+
+.container-logo {
+  display: flex;
+  align-items: center;
 }
 
 #logo {
-  height: 100px;
+  height: 130px;
   width: auto;
 }
 
 .navigation-bar {
-  width: 55%;
+  width: auto;
   height: auto;
+  display: flex;
+  align-items: center;
 }
 
 .list-item-navbar {
@@ -35,19 +43,19 @@ header {
 }
 
 .navbar-item {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: 18px;
   padding: 2.3rem;
   cursor: pointer;
 }
 
 .navbar-item:hover {
-  color: #04520e;
+  color: var(--color-text);
 }
 
 .container-main {
   height: 100vh;
-  background: linear-gradient(#04520e 10%, #b1d3b5 100%);
+  background: linear-gradient(#b1d3b5 0%, #fdfdfd 100%);
   display: grid;
   grid-template-columns: repeat(2, 2fr);
 }
@@ -64,8 +72,9 @@ header {
 
 #profile-photo {
   width: 300px;
-  height: 350px;
+  height: 300px;
   padding: 1rem;
+  border-radius: 50%;
 }
 
 .content-presentation-text {
@@ -79,33 +88,35 @@ header {
 }
 
 .profile-name {
-  color: #f5f5f5;
-  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--color-text);
+  font-family: var(--font-family);
   font-size: 4rem;
 }
 
 .credential-number {
-  color: #e6e2e2;
-  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--color-text-2);
+  font-family: var(--font-family);
   font-size: 2rem;
 }
 .description-text {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 18px;
-  color: #f5f5f5;
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-style: italic;
+  color: var(--color-text-2);
   padding: 1rem;
 }
 
 button {
   background-color: #fff;
-  border: 1px solid #25d366;
-  padding: 5px;
+  border: 1px solid var(--color-text);
+  padding: 1rem;
   position: relative;
-  width: 12em;
-  height: 2em;
+  width: 13rem;
+  height: 2.5rem;
   transition: 0.5s;
   font-size: 17px;
-  border-radius: 0.4em;
+  font-family: var(--font-family);
+  border-radius: 3px;
   cursor: pointer;
 }
 
@@ -116,7 +127,7 @@ button p {
   margin: 0;
   padding: 0;
   transition: 0.5s;
-  color: #25d366;
+  color: var(--color-text-2);
 }
 
 button svg {
@@ -141,5 +152,6 @@ button:hover svg {
 }
 
 button:hover {
-  background-color: #25d366;
+  background-color: var(--color-btn);
+  border: 1px solid var(--color-btn);
 }
