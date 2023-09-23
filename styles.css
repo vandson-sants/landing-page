@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Mooli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@font-face {
+  font-family: "Brody Regular";
+  src: url("/assets/fonts/brody-regular-maisfontes.ef38/brody-regular.ttf")
+    format("truetype");
+}
 
 * {
   padding: 0;
@@ -9,6 +15,8 @@
 :root {
   --color-text: #04520e;
   --color-text-2: #2b2b2b;
+  --color-text-3: #000;
+  --color-text-4: #317139;
   --color-btn: #7ec181;
   --font-family: "IBM Plex Sans", sans-serif;
 }
@@ -57,7 +65,12 @@ header {
   height: 100vh;
   background: linear-gradient(#b1d3b5 0%, #fdfdfd 100%);
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+}
+
+.container-main-2 {
+  height: 100vh;
+  background: linear-gradient(#fdfdfd 0%, #e3f5e5 100%);
+  display: grid;
 }
 
 .container-profile {
@@ -88,7 +101,7 @@ header {
 }
 
 .profile-name {
-  color: var(--color-text);
+  color: var(--color-text-4);
   font-family: var(--font-family);
   font-size: 4rem;
 }
@@ -96,20 +109,29 @@ header {
 .credential-number {
   color: var(--color-text-2);
   font-family: var(--font-family);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
+
 .description-text {
   font-family: var(--font-family);
-  font-size: 20px;
-  font-style: italic;
+  font-size: 25px;
   color: var(--color-text-2);
   padding: 1rem;
 }
 
-button {
+.description-presentation-text {
+  font-family: "Brody Regular";
+  font-size: 65px;
+  font-style: italic;
+  color: var(--color-text-3);
+  padding: 1rem;
+}
+
+.btn-schedule-service {
   background-color: #fff;
   border: 1px solid var(--color-text);
   padding: 1rem;
+  margin-top: 2rem;
   position: relative;
   width: 13rem;
   height: 2.5rem;
@@ -120,7 +142,7 @@ button {
   cursor: pointer;
 }
 
-button p {
+.schedule-service-text {
   position: absolute;
   top: 0.4em;
   left: 1.15em;
@@ -130,7 +152,7 @@ button p {
   color: var(--color-text-2);
 }
 
-button svg {
+.btn-schedule-service svg {
   position: absolute;
   top: 0.45em;
   right: 0.5em;
@@ -142,16 +164,16 @@ button svg {
   fill: #fff;
 }
 
-button:hover p {
+.btn-schedule-service:hover .schedule-service-text {
   left: 0.5em;
   color: #fff;
 }
 
-button:hover svg {
+.btn-schedule-service:hover svg {
   opacity: 1;
 }
 
-button:hover {
+.btn-schedule-service:hover {
   background-color: var(--color-btn);
   border: 1px solid var(--color-btn);
 }
