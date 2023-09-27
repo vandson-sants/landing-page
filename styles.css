@@ -129,6 +129,13 @@ header {
   display: grid;
 }
 
+.btn-schedule-service-2:hover {
+  background: #d56898;
+  color: var(--color-text-5);
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
 .content-presentation {
   display: flex;
   justify-content: center;
@@ -206,7 +213,6 @@ header {
 }
 
 .container-section-3 {
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 2fr);
 }
