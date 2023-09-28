@@ -18,8 +18,10 @@
   --color-text-3: #000;
   --color-text-4: #317139;
   --color-text-5: #fff;
+  --color-background: #ffffff;
   --color-btn: #7ec181;
   --font-family: "IBM Plex Sans", sans-serif;
+  --font-family-2: "Allura", sans-serif;
 }
 
 header {
@@ -64,7 +66,7 @@ header {
 
 .btn-scrollTop {
   outline: none;
-  background-color: var(--color-text-5);
+  background-color: var(--color-background);
   border-radius: 50%;
   border: none;
   width: 60px;
@@ -102,7 +104,7 @@ header {
 }
 
 .container-section-2 {
-  height: 100vh;
+  height: auto;
   background: linear-gradient(#fdfdfd 0%, #e3f5e5 100%);
   display: grid;
 }
@@ -122,15 +124,25 @@ header {
   height: 300px;
   padding: 1rem;
   border-radius: 50%;
-  margin-top: 8rem;
+  margin-top: 3rem;
 }
 
 .content-presentation-text {
   display: grid;
 }
 
+.btn-schedule-service-2 {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  padding: 0.6rem;
+  border: 1px solid var(--color-text-4);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .btn-schedule-service-2:hover {
   background: #d56898;
+  border: none;
   color: var(--color-text-5);
   transition: all 0.5s;
   transform: scale(1.1);
@@ -143,8 +155,8 @@ header {
 }
 
 #background-banner-img {
-  width: 100%;
-  object-fit: cover;
+  width: 90vw;
+  border-radius: 8px;
 }
 
 .content-text {
@@ -155,7 +167,7 @@ header {
 
 .content-text-2 {
   position: absolute;
-  background-color: #f8fbf8;
+  background-color: #ffffff8c;
   text-align: center;
   display: grid;
   align-content: center;
@@ -171,7 +183,7 @@ header {
 }
 
 .credential-number {
-  color: var(--color-text-2);
+  color: var(--color-text-3);
   font-family: var(--font-family);
   font-size: 1.5rem;
 }
@@ -179,7 +191,7 @@ header {
 .description-text {
   font-family: var(--font-family);
   font-size: 25px;
-  color: var(--color-text-2);
+  color: var(--color-text-3);
   padding: 1rem;
 }
 
@@ -210,6 +222,19 @@ header {
     transform: translateZ(0) translateY(0);
     opacity: 1;
   }
+}
+
+.service-container {
+}
+
+.title-text {
+  padding: 3rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-family: var(--font-family);
+  color: #000000;
 }
 
 .container-section-3 {
