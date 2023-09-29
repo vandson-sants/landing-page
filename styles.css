@@ -58,6 +58,7 @@ header {
   font-size: 18px;
   padding: 2.3rem;
   cursor: pointer;
+  color: var(--color-text-3);
 }
 
 .navbar-item:hover {
@@ -98,14 +99,23 @@ header {
 }
 
 .container-section {
-  height: 100vh;
+  height: auto;
   /* background: linear-gradient(#b1d3b5 0%, #fdfdfd 100%); */
   display: grid;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--color-text-3);
+}
+
 .container-section-2 {
   height: auto;
-  background: linear-gradient(#fdfdfd 0%, #e3f5e5 100%);
+  background: linear-gradient(#f1f0f0 0%, #e3f5e5 100%);
   display: grid;
 }
 
@@ -155,7 +165,7 @@ header {
 }
 
 #background-banner-img {
-  width: 90vw;
+  width: 97vw;
   border-radius: 8px;
 }
 
